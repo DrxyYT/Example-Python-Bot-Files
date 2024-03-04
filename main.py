@@ -19,6 +19,6 @@ async def on_ready():
 try:
     bot.run('YOUR_BOT_TOKEN_HERE')
 except KeyboardInterrupt:
-    print('Nyxx is shutting down...')
+    print('Bot is shutting down...')
     bot.logout()
     bot.close()
