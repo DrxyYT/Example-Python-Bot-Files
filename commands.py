@@ -1,3 +1,16 @@
+import discord
+from discord.ext import commands
+
+intents = discord.Intents.default()
+intents.all()
+intents.message_content = True # Make sure to enable this setting for your bot in the Dev Portal. It needs this to send the messages after the command is sent.
+
+client = discord.Client(intents=intents)
+
+
+bot = commands.Bot(command_prefix='', intents=intents)
+# ^ change the prefix to your liking :)
+
 # Commands. Copy and paste them into the existing code for your bot file name "main.py" or what ever it is. If you have trouble you can ask ChatGPT like I did.
 @bot.command(name='hello')
 async def hello(ctx):
