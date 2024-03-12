@@ -11,7 +11,7 @@ client = discord.Client(intents=intents)
 bot = commands.Bot(command_prefix='', intents=intents)
 # ^ change the prefix to your liking :)
 
-# Commands. Copy and paste them into the existing code for your bot file name "main.py" or what ever it is. If you have trouble you can ask ChatGPT like I did.
+# Commands. Copy and paste them into the existing code for your bot file name "main.py" or what ever it is. If you have trouble you can ask ChatGPT for help like I did.
 @bot.command(name='hello')
 async def hello(ctx):
     await ctx.send(f'Hello {ctx.author.mention}! I am your friendly bot.')
